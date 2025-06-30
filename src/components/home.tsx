@@ -331,24 +331,25 @@ const Home = () => {
             </a>
           </div>
         </motion.div>
-        <motion.div
-          className="md:w-1/3 mt-[-50px] md:mt-[-80px] "
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-        >
-          <div className="relative w-full h-[500px]  ">
-            {/* White glow arc behind head (anticlockwise) */}
-            <div className="absolute top-[0.3%] left-[40%] w-[350px] h-[350px] bg-white opacity-25 rounded-full blur-[150px] rotate-[70deg] pointer-events-none z-4 "></div>
+       <motion.div
+  className="md:w-1/3 w-full flex justify-center items-center md:mt-[-100px] mt-4"
+  initial="hidden"
+  animate="visible"
+  variants={fadeIn}
+>
+  <div className="relative w-full max-w-[300px] sm:max-w-[400px] md:max-w-none h-auto">
+    {/* Glow background */}
+    {/* <div className="absolute inset-0 bg-white opacity-5 rounded-full blur-[150px] z-0 rotate-[70deg]" /> */}
+    <div className="absolute top-[0.3%] left-[45%] w-[450px] h-[350px] bg-white opacity-25 rounded-full blur-[150px] rotate-[70deg] pointer-events-none z-4"></div>
 
-            {/* Profile image on top */}
-            <img
-              src="https://i.postimg.cc/dVqn3SmG/bg.png"
-              alt="Profile"
-              className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-auto h-full object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.7)] z-10 "
-            />
-          </div>
-        </motion.div>
+    <img
+      src="https://i.postimg.cc/dVqn3SmG/bg.png"
+      alt="Profile"
+      className="relative w-full h-auto object-contain z-10"
+    />
+  </div>
+</motion.div>
+
       </section>
 
       {/* Services Section */}
