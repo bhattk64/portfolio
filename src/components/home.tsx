@@ -343,7 +343,7 @@ const Home = () => {
     <div className="absolute top-[0.3%] left-[45%] w-[450px] h-[350px] bg-white opacity-25 rounded-full blur-[150px] rotate-[70deg] pointer-events-none z-4"></div>
 
     <img
-      src="/bg.png"
+      src="./public/bg.png"
       alt="Profile"
       className="relative w-full h-auto object-contain z-10"
     />
